@@ -182,31 +182,9 @@ Start the application:
 python -m streamlit run app.py
 ```
 
-Open the local address shown in the terminal, usually:
+Open the local address shown in the terminal, 
 
 http://localhost:8501
 
-Private-repository access is required to clone the project.
 
-## 10. Limitations & Ethical Considerations
 
-- The dataset contains synthetic/hybrid records and simulated failure outcomes.
-- Model scores are not calibrated real-world failure probabilities.
-- A high score does not guarantee that a pipeline will fail.
-- The selected model does not outperform the age-only benchmark on the tested top-5% capture measure.
-- Deployment on verified operational utility data would require additional validation, data governance, and calibration.
-- Infrastructure maintenance decisions should involve qualified professionals rather than relying solely on model scores.
-
-## 11. Team Contributions
-
-Add team members and their verified contributions here.
-
-## 12. Data Sources and AI Use
-
-The project was informed by water mains inventory and water main breaks datasets. Add the original dataset URLs, publishers, and applicable usage or licensing information after verification.
-
-AI-assisted coding tools, including ChatGPT and Codex, were used during programming, debugging, and application development. The team is responsible for reviewing and understanding the implementation. Edit this disclosure to reflect the team's actual use and course requirements.
-
-## 13. Project Status
-
-The Streamlit research prototype has been deployed and tested. Its results are intended for academic demonstration only.

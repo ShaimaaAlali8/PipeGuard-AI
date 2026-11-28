@@ -72,7 +72,6 @@ with st.sidebar:
 
     st.caption("Assessment period: 2025")
     st.caption("Selected model: Gradient Boosting")
-    st.caption("Research prototype")
 
 
 # ==========================================
@@ -84,12 +83,6 @@ st.title("PipeGuard AI")
 st.caption(
     "Water Distribution Pipeline Failure Prediction "
     "& Maintenance Prioritization"
-)
-
-st.info(
-    "Research prototype using synthetic/hybrid data. "
-    "Model scores are experimental ranking scores, "
-    "not calibrated real-world failure probabilities."
 )
 
 
@@ -407,11 +400,6 @@ def show_prioritization():
         mime="text/csv",
     )
 
-    st.caption(
-        "Retrospective 2025 rankings for "
-        "research demonstration only."
-    )
-
 
 # ==========================================
 # 8. INTERACTIVE RISK PREDICTION
@@ -652,12 +640,6 @@ def show_prediction():
             "top-5% reference cutoff."
         )
 
-    st.caption(
-        "The score is not a calibrated real-world "
-        "failure probability. Changing the form creates "
-        "a hypothetical assessment, not a live forecast."
-    )
-
     with st.expander("View Model Inputs"):
         st.dataframe(
             model_input.T.rename(
@@ -678,12 +660,6 @@ def show_model_information():
         "How PipeGuard AI was trained, evaluated, "
         "and selected for experimental pipeline "
         "inspection prioritization."
-    )
-
-    st.info(
-        "Results below come from the research notebook, "
-        "using hybrid/synthetic data. They are not live "
-        "operational performance measurements."
     )
 
     # Model overview
@@ -1000,27 +976,13 @@ def show_model_information():
 
     st.divider()
 
-    # Business purpose and limitations
-    st.subheader("Business Purpose & Limitations")
+    # Business purpose
+    st.subheader("Business Purpose")
 
     st.write(
         "The application demonstrates how asset managers "
         "and maintenance planners could allocate limited "
         "inspections using risk rankings."
-    )
-
-    st.warning(
-        "Synthetic/hybrid records, simulated outcomes, "
-        "and possible changes in real infrastructure "
-        "conditions limit the findings. The model needs "
-        "independent evaluation and probability calibration "
-        "on verified utility data before being used for "
-        "real maintenance decisions."
-    )
-
-    st.caption(
-        "Notebook results shown here are fixed "
-        "and are not recalculated live."
     )
 
 
@@ -1051,6 +1013,5 @@ elif page == "📈 Model Information":
 st.divider()
 
 st.caption(
-    "PipeGuard AI | Water Infrastructure Risk Intelligence "
-    "| Experimental Research Prototype"
+    "PipeGuard AI | Water Infrastructure Risk Intelligence"
 )
